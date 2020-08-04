@@ -48,3 +48,8 @@
 .nav-main-header div .header-logout{
   float: right;
 }
+
+.nav-main-header form{
+  margin: 0;
+  padding: 0;
+}
