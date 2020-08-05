@@ -10,20 +10,26 @@
   <body>
 
     <header>
-      <nav class="nav-main-header">
-        <a class="header-logo" href="#">
-          Pooh & Yas
-        </a>
-
+      <nav>
         <ul>
-          <li> <a href="#"> Home </a> </li>
-          <li> <a href="#"> About me </a> </li>
-          <li> <a href="#"> Contact Us </a> </li>
-          <li> <a href="#"> Articles </a> </li>
+          <div class="main-header-logo">
+            <img src='images/giphy.gif'>
+          </div>
 
+          <div class="main-header-links">
+            <li> <a href="#"> Home </a> </li>
+            <li> <a href="#"> About me </a> </li>
+            <li> <a href="#"> Contact Us </a> </li>
+            <li> <a href="#"> Articles </a> </li>
+          </div>
 
-          <div>
+          <div class='main-header-forms'>
 
+            <form class="header-login" action="includes/login.php" method="post">
+              <input type="text" name="userid" placeholder="Username/Email">
+              <input type="password" name="password" placeholder="Password">
+              <button type="submit" name="login_submit"> Login </button>
+            </form>
 
             <a class="header-signup" href="#">Sign Up</a>
 
@@ -31,16 +37,8 @@
               <button type="submit" name="logout_submit"> Logout </button>
             </form>
 
-            <form class="header-login" action="includes/login.php" method="post">
-              <input type="text" name="userid" placeholder="Username/Email">
-              <input type="password" name="password" placeholder="password">
-              <button type="submit" name="login_submit"> Login </button>
-            </form>
-
           </div>
         </ul>
-
-
 
       </nav>
     </header>

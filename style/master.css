@@ -1,55 +1,79 @@
-/*header nav bar styling goes here*/
-.nav-main-header ul{
+/*main-header styling goes here*/
+
+nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
 }
 
-.nav-main-header .header-logo{
-  overflow: hidden;
-  background-color: #333;
+nav img{
+  float: left;
+  width: 60px;
+  padding: 0 14px;
+}
+
+nav li{
   float: left;
 }
 
-.nav-main-header li{
-  float: left;
+nav .main-header-forms{
+  float: right;
 }
 
-.nav-main-header a{
+nav form{
+  float: left;
+  padding: 13px 16px 14px;
+}
+
+nav li a{
   display: block;
-  color: white;
+  color: black;
+  font-family: arial;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
+  border-radius: 4px;
 }
 
-.nav-main-header li a:hover{
-  background-color: #111;
+nav li a:hover{
+  background-color: black;
+  color: white;
 }
 
-.nav-main-header div{
+.header-signup{
+  margin-right: 10px;
+  float: left;
+  display: block;
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  padding: 20px 0;
+}
+
+nav input{
+  border: none;
+  border-radius: 4px;
+  font-family: arial;
+  background-color: #eee;
+  width: 150px;
+  padding: 7px 20px;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
 }
 
-
-.nav-main-header div .header-login{
-  float: right;
+nav button{
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  background-color: #4CAF50;
+  cursor: pointer;
+  padding: 7px 10px;
 }
 
-.nav-main-header div .header-signup{
-  float: right;
-}
-
-.nav-main-header div .header-logout{
-  float: right;
-}
-
-.nav-main-header form{
-  margin: 0;
-  padding: 0;
+body{
+  background-color: #eee;
 }
