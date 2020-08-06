@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION['uname'])){
+  $login=true;
+}else{
+  $login=false;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
