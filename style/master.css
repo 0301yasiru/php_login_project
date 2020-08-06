@@ -1,6 +1,9 @@
 /*main-header styling goes here*/
 
 nav ul{
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,9 +33,12 @@ nav form{
 nav li a{
   display: block;
   color: black;
-  font-family: arial;
+  /*font-family: arial;*/
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  font-weight: bold;
   text-align: center;
-  padding: 20px 16px;
+  padding: 17px 16px;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -46,11 +52,11 @@ nav li a:hover{
   margin-right: 10px;
   float: left;
   display: block;
-  font-family: arial;
-  font-size: 14px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
   text-decoration: none;
   color: black;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 nav input{
@@ -59,8 +65,8 @@ nav input{
   font-family: arial;
   background-color: #eee;
   width: 150px;
-  padding: 7px 20px;
-  margin: 0;
+  padding: 8px 20px;
+  margin: 0 0 1px;
 }
 
 nav button{
@@ -68,12 +74,117 @@ nav button{
   border-radius: 4px;
   color: white;
   font-family: arial;
+  /*font-family: 'Dancing Script', cursive;*/
+  /*font-size: 20px;*/
   text-decoration: none;
   background-color: #4CAF50;
   cursor: pointer;
-  padding: 7px 10px;
+  padding: 8px 15px;
 }
+
+
+/*main styling code goes here*/
+
+/*
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+
+*/
 
 body{
   background-color: #eee;
+}
+
+main{
+  background-color: #eee;
+  padding: 10px 30px;
+  margin: 65px 60px;
+}
+
+main p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  text-align: justify;
+  padding: 5px 5px;
+}
+
+main h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+main input{
+  float: none;
+  display: block;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #eee;
+  padding: 10px 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+main textarea{
+  float: none;
+  display: block;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #eee;
+  padding: 10px 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+main button{
+  float: none;
+  display: block;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  color: white;
+}
+
+main button:hover{
+  background-color: #357a38;
+}
+
+.col100{
+  width: 100%;
+  display: block;
+}
+
+.col75{
+  width: 75%;
+  display: block;
+}
+
+.col60{
+  width: 60%;
+  display: block;
+}
+
+.col50{
+  width: 50%;
+  display: block;
+}
+
+.col25{
+  width: 25%;
+  display: block;
+}
+
+.centered-content-ilastic{
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px 30px;
+  float: none;
+  display: block;
+  overflow: hidden;
 }

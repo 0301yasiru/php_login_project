@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/master.css">
     <title>login</title>
@@ -17,9 +18,9 @@
           </div>
 
           <div class="main-header-links">
-            <li> <a href="#"> Home </a> </li>
-            <li> <a href="#"> About me </a> </li>
-            <li> <a href="#"> Contact Us </a> </li>
+            <li> <a href="index.php"> Home </a> </li>
+            <li> <a href="aboutme.php"> About me </a> </li>
+            <li> <a href="contact_me.php"> Contact Us </a> </li>
             <li> <a href="#"> Articles </a> </li>
           </div>
 
@@ -31,7 +32,7 @@
               <button type="submit" name="login_submit"> Login </button>
             </form>
 
-            <a class="header-signup" href="#">Sign Up</a>
+            <a class="header-signup" href="signup.php">Sign Up</a>
 
             <form class="header-logout" action="includes/logout.php" method="post">
               <button type="submit" name="logout_submit"> Logout </button>
