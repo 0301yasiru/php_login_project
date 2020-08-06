@@ -35,18 +35,21 @@ if (isset($_SESSION['uname'])){
           </div>
 
           <div class='main-header-forms'>
+            <?php
+              if($login){
+                echo '<form class="header-logout" action="includes/logout.php" method="post">
+                        <button type="submit" name="logout_submit"> Logout </button>
+                      </form>';
+              }else{
+                echo '<form class="header-login" action="includes/login.php" method="post">
+                        <input type="text" name="userid" placeholder="Username/Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit" name="login_submit"> Login </button>
+                      </form>
+                      <a class="header-signup" href="signup.php">Sign Up</a>';
+              }
 
-            <form class="header-login" action="includes/login.php" method="post">
-              <input type="text" name="userid" placeholder="Username/Email">
-              <input type="password" name="password" placeholder="Password">
-              <button type="submit" name="login_submit"> Login </button>
-            </form>
-
-            <a class="header-signup" href="signup.php">Sign Up</a>
-
-            <form class="header-logout" action="includes/logout.php" method="post">
-              <button type="submit" name="logout_submit"> Logout </button>
-            </form>
+            ?>
 
           </div>
         </ul>

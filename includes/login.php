@@ -9,7 +9,7 @@ if (isset($_POST['login_submit'])) {
 
   //now we should check for errors
   if(empty($useridentity) || empty($password)){
-    header("Location ../index.php?error=emptyfields&userid=".$useridentity);
+    header("Location: ../index.php");
     exit();
   }//end of checking for empty emptyfields
   else{
