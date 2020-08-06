@@ -43,7 +43,7 @@ if(isset($_POST["signup_submit"])){
       mysqli_stmt_store_result($stmt); //fetching the results from SQLiteDatabase
 
       if(mysqli_stmt_num_rows($stmt) > 0){
-        header("Location: ../signup.php?error=sqlerror1");
+        header("Location: ../signup.php?error=sameuser");
         exit();
       } /*end of checking for same user name*/
       else{
@@ -53,14 +53,23 @@ if(isset($_POST["signup_submit"])){
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)){
-          header("Location: ../signup.php?error=sqlerror1");
+          header("Location: ../signup.php?error=sqlerror");
           exit();
         }/*end of checking for database conncection errors*/
         else{
           $hashed_password = password_hash($password, PASSWORD_DEFAULT); //hashing the password here
           mysqli_stmt_bind_param($stmt, "ssss", $user_name, $user_id, $user_email, $hashed_password);
           mysqli_stmt_execute($stmt);
-          header("Location: ../signup.php?error=none");
+
+          //at this point all the errors are handled
+          //then login the user
+          session_start();
+          $_SESSION['name'] = $_POST['first_name'];
+          $_SESSION['uname'] = $_POST['user_name'];
+          $_SESSION['email'] = $_POST['email'];
+
+
+          header("Location: ../signup.php?signup=success");
           exit();
         }/*end of enterting data else statement*/
 

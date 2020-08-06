@@ -10,8 +10,12 @@
       </p><br>
 
       <form action="includes/email.php" method="post" style="width: 97%;">
-        <input class="col100" type="text" name="first_name" placeholder="Your Name"><br>
-        <input class="col100" type="text" name="email" placeholder="E-mail address"><br>
+        <?php
+          if(!$login){
+            echo '<input class="col100" type="text" name="first_name" placeholder="Your Name"><br>';
+            echo '<input class="col100" type="text" name="email" placeholder="E-mail address"><br>';
+          }
+        ?>
         <input class="col100" type="text" name="subject" placeholder="Subject"><br>
         <textarea class="col100" name="message" placeholder="Your Message here"></textarea><br>
         <button type="submit" name="message_submit">Submit</button>

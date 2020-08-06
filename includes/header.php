@@ -37,7 +37,8 @@ if (isset($_SESSION['uname'])){
           <div class='main-header-forms'>
             <?php
               if($login){
-                echo '<form class="header-logout" action="includes/logout.php" method="post">
+                echo '<p>'.$_SESSION['uname'].'</p>
+                      <form class="header-logout" action="includes/logout.php" method="post">
                         <button type="submit" name="logout_submit"> Logout </button>
                       </form>';
               }else{
