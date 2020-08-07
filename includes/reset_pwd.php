@@ -44,8 +44,8 @@ if (isset($_POST['pwd-reset-submit'])) {
         $token = random_bytes(32);
 
         //create the reset links url to send to the user
-        $server = 'localhost:8080';
-        $url = "http://$server/login_project/create-new-password.php?selector=$selector&validator=".bin2hex($token);
+        $server = '124.43.41.139';
+        $url = "http://$server/php_login_project/create-new-password.php?selector=$selector&validator=".bin2hex($token);
 
         //now set the expiration after 5 minutes
         $expire = date("U") + 300;// U format give the number of seconds since 1970
@@ -88,9 +88,16 @@ if (isset($_POST['pwd-reset-submit'])) {
           $headers = "From: 0301lahiru@gmail.com; MIME-Version: 1.0\r\n";
           $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-          $msg = '<body>
+          $msg = '
+                <!DOCTYPE html>
+                <html lang="en" dir="ltr">
+                  <head>
+                    <meta charset="utf-8">
+                    <title></title>
+                  </head>
+                  <body>
                     <h1>Reset Your Password</h1>
-                    <p>Hello, to reset your password just click on the link below. Then it would rederect you to password reset page.</p>
+                    <p> This email contains sensitive information. And also this email will expiren with in 5 minutes. use the link below to reset your password. </p> <br>
                     <a href="'.$url.'">'.$url.'</a>
                   </body>';
 
