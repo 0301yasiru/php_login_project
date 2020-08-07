@@ -147,7 +147,8 @@ main input{
   padding: 10px 10px;
   font-family: 'Indie Flower', cursive;
   font-size: 18px;
-  margin: 3px 0;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
 main textarea{
@@ -160,7 +161,8 @@ main textarea{
   font-family: 'Indie Flower', cursive;
   font-size: 18px;
   height: 150px;
-  margin-top: 10px;
+  box-sizing: border-box;
+  margin: 5px 0;
 }
 
 main button{
@@ -175,6 +177,13 @@ main button{
 
 main button:hover{
   background-color: #357a38;
+}
+
+main a{
+  font-family: arial;
+  text-decoration: none;
+  color: #C820F5;
+  font-size: 14px;
 }
 
 .col100{

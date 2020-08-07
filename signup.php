@@ -35,13 +35,14 @@
                     </p><br>
 
 
-                    <form action="includes/signin.php" method="post" style="width: 97%;">
-                      <input class="col100" type="text" name="first_name" placeholder="Your Name"><br>
-                      <input class="col100" type="text" name="user_name" placeholder="User Name"><br>
-                      <input class="col100" type="text" name="email" placeholder="E-mail address"><br>
-                      <input class="col100" type="password" name="passwd" placeholder="Password"><br>
-                      <input class="col100" type="password" name="repasswd" placeholder="Password"><br>
+                    <form class="col100" action="includes/signin.php" method="post">
+                      <input class="col100" type="text" name="first_name" placeholder="Your Name">
+                      <input class="col100" type="text" name="user_name" placeholder="User Name">
+                      <input class="col100" type="text" name="email" placeholder="E-mail address">
+                      <input class="col100" type="password" name="passwd" placeholder="Password">
+                      <input class="col100" type="password" name="repasswd" placeholder="Password">
                       <button type="submit" name="signup_submit">Sign Up</button>
+                      <a href="forgot_pwd.page.php" style = "float: right;">Forgot Password?</a>
                     </form>';
               }
             ?>

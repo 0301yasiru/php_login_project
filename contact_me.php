@@ -7,17 +7,17 @@
 
       <p>
         Hello, If you want to contact with me for any reason please use the contact form below..
-      </p><br>
+      </p>
 
-      <form action="includes/email.php" method="post" style="width: 97%;">
+      <form class="col100" action="includes/email.php" method="post" >
         <?php
           if(!$login){
-            echo '<input class="col100" type="text" name="first_name" placeholder="Your Name"><br>';
-            echo '<input class="col100" type="text" name="email" placeholder="E-mail address"><br>';
+            echo '<input class="col100" type="text" name="first_name" placeholder="Your Name">';
+            echo '<input class="col100" type="text" name="email" placeholder="E-mail address">';
           }
         ?>
-        <input class="col100" type="text" name="subject" placeholder="Subject"><br>
-        <textarea class="col100" name="message" placeholder="Your Message here"></textarea><br>
+        <input class="col100" type="text" name="subject" placeholder="Subject">
+        <textarea class="col100" name="message" placeholder="Your Message here"></textarea>
         <button type="submit" name="message_submit">Submit</button>
       </form>
     </div>
