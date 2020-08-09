@@ -82,6 +82,7 @@ nav input{
   width: 150px;
   padding: 8px 20px;
   margin: 0 0 1px;
+  box-sizing: border-box;
 }
 
 nav button{
@@ -218,4 +219,5 @@ main a{
   float: none;
   display: block;
   overflow: hidden;
+  box-sizing: border-box;
 }
