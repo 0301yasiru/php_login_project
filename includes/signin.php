@@ -49,7 +49,7 @@ if(isset($_POST["signup_submit"])){
       else{
         //at this point all the errorr are handled
         //no it is time to instert user data to the database
-        $sql = "INSERT INTO `users`(`name`, `uname`, `email`, `pwd`) VALUES(?,?,?,?)";
+        $sql = "INSERT INTO `users`(`name`, `uname`, `email`, `pwd`, `marks`) VALUES(?,?,?,?, 0)";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -67,6 +67,7 @@ if(isset($_POST["signup_submit"])){
           $_SESSION['name'] = $_POST['first_name'];
           $_SESSION['uname'] = $_POST['user_name'];
           $_SESSION['email'] = $_POST['email'];
+          $_SESSION['marks'] = 0;
 
 
           header("Location: ../signup.php?signup=success");

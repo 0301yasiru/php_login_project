@@ -132,10 +132,19 @@ main p{
 .success_msg{
   color: green;
 }
+.sinhla{
+  font-size: 14px;
+}
 
 main h1{
   font-family: 'Pacifico', cursive;
   font-size: 40px;
+  padding: 20px 0;
+}
+
+main h3{
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
   padding: 20px 0;
 }
 
@@ -215,9 +224,36 @@ main a{
 .centered-content-ilastic{
   background-color: white;
   margin: 0 auto;
+  margin-bottom: 10px;
   padding: 10px 30px;
   float: none;
   display: block;
   overflow: hidden;
   box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.q_box{
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  float: none;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.q_box input{
+  float: left;
+  width: 80%;
+  margin: 0 0;
+  font-size: 28px;
+}
+.q_box button{
+  float: left;
+  width: 19%;
+  font-size: 28px;
+  padding: 14px 20px;
 }

@@ -27,10 +27,10 @@ if (isset($_SESSION['uname'])){
           </div>
 
           <div class="main-header-links">
-            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/index.php' || $_SERVER['REQUEST_URI'] == '/login_project/'){echo 'class="active_link"';} ?> href="index.php"> Home </a> </li>
-            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/aboutme.php'){echo 'class="active_link"';} ?> href="aboutme.php"> About me </a> </li>
-            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/contact_me.php'){echo 'class="active_link"';} ?> href="contact_me.php"> Contact Us </a> </li>
-            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/articles.php'){echo 'class="active_link"';} ?> href="articles.php"> Articles </a> </li>
+            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/php_login_project/index.php' || $_SERVER['REQUEST_URI'] == '/php_login_project/'){echo 'class="active_link"';} ?> href="index.php"> Home </a> </li>
+            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/php_login_project/aboutme.php'){echo 'class="active_link"';} ?> href="aboutme.php"> About me </a> </li>
+            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/php_login_project/contact_me.php'){echo 'class="active_link"';} ?> href="contact_me.php"> Contact Us </a> </li>
+            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/php_login_project/articles.php'){echo 'class="active_link"';} ?> href="articles.php"> Articles </a> </li>
           </div>
 
           <div class='main-header-forms'>
