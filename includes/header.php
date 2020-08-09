@@ -30,7 +30,7 @@ if (isset($_SESSION['uname'])){
             <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/index.php' || $_SERVER['REQUEST_URI'] == '/login_project/'){echo 'class="active_link"';} ?> href="index.php"> Home </a> </li>
             <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/aboutme.php'){echo 'class="active_link"';} ?> href="aboutme.php"> About me </a> </li>
             <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/contact_me.php'){echo 'class="active_link"';} ?> href="contact_me.php"> Contact Us </a> </li>
-            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/some.php'){echo 'class="active_link"';} ?> href="#"> Articles </a> </li>
+            <li> <a <?php  if($_SERVER['REQUEST_URI'] == '/login_project/articles.php'){echo 'class="active_link"';} ?> href="articles.php"> Articles </a> </li>
           </div>
 
           <div class='main-header-forms'>
